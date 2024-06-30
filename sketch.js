@@ -5,13 +5,16 @@ var colourP = null;
 var helpers = null;
 
 
+this.preload = function() {
+    star = loadImage('./assets/star.png');
+}
+
 function setup() {
 
     //create a canvas to fill the content div from index.html
-    canvasContainer = select('#content');
+    var canvasContainer = select('#content');
     var c = createCanvas(canvasContainer.size().width, canvasContainer.size().height);
     c.parent("content");
-
     //create helper functions and the colour palette
     helpers = new HelperFunctions();
     colourP = new ColourPicker();
@@ -23,6 +26,7 @@ function setup() {
     toolbox.addTool(new FreehandTool());
     toolbox.addTool(new LineToTool());
     toolbox.addTool(new SprayCanTool());
+    toolbox.addTool(new StampTool());
     toolbox.addTool(new mirrorDrawTool());
     background(255);
 

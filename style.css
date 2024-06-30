@@ -44,9 +44,6 @@ html, body {
     flex-flow: wrap;
 }
 
-
-
-
 .wrapper {
     display: grid;
     height: 100%;
@@ -55,9 +52,13 @@ html, body {
     grid-template-areas:
         "header header header"
         "sidebar content content"
-        "colourP colourP options";
-    background-color: rgb(190, 189, 189);
-    color: #9a3232;
+        "colourP colourP options"
+}
+
+#controls {
+    grid-area: colourP;
+    margin-left: 100px;    
+
 }
 
 .box {
