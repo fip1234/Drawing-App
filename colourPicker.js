@@ -1,5 +1,4 @@
 ////////////////COLOUR PICKER TOOL////////////////
-
 // Displays and handles the colour palette.
 function ColourPicker() {
     //make the start colour be black

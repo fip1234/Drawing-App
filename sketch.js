@@ -28,6 +28,7 @@ function setup() {
     toolbox.addTool(new SprayCanTool());
     toolbox.addTool(new StampTool());
     toolbox.addTool(new mirrorDrawTool());
+    toolbox.addTool(new EraserTool());
     background(255);
 
 }
