@@ -55,10 +55,6 @@ html, body {
         "colourP colourP options"
 }
 
-#controls {
-    grid-area: colourP;
-    margin-left: 100px;    
-}
 
 .box {
     background-color: rgb(190, 189, 189);
