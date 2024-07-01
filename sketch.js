@@ -5,10 +5,10 @@ var colourP = null;
 var helpers = null;
 
 
-this.preload = function() {
+function preload() {
     star = loadImage('./assets/star.png');
-}
-
+    }
+    
 function setup() {
 
     //create a canvas to fill the content div from index.html

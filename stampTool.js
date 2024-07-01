@@ -1,14 +1,10 @@
+var star;
+var starSizeSlider;
+var nStarSlider;
+
 function StampTool() {
     this.name = "stampTool";
     this.icon = "assets/stamp.jpg";
-
-    var star;
-    var starSizeSlider;
-    var nStarSlider;
-
-    this.preload = function() {
-        star = loadImage('./assets/star.png');
-    }
 
     this.populateOptions = function() {
         starSizeSlider = createSlider(5, 50, 20);
@@ -18,9 +14,6 @@ function StampTool() {
         nStarSlider.parent("#numberOfStarsControl");
     }
 
-    this.draw = function() {
-        console.log("Draw function of StampTool is called."); // Check if this log appears in the console
-    
         this.draw = function() {
             if (mouseIsPressed && star) {
                 for (var i = 0; i < nStarSlider.value(); i++) {
@@ -32,15 +25,4 @@ function StampTool() {
             }
         }
         
-    }
-    
-
-    this.unselectTool = function() {
-        if (starSizeSlider) {
-            starSizeSlider.remove();
-        }
-        if (nStarSlider) {
-            nStarSlider.remove();
-        }
-    }
 }

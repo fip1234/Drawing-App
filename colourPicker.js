@@ -31,8 +31,6 @@ function ColourPicker() {
         select(".colourPicker").child(colorInput);
         colorInput.input(colourClick);
 
-        // // Set border for the color input
-        // select("#colourPicker").style("border", "2px black");
     };
 
     // Call the loadColours function now it is declared
