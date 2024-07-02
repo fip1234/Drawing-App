@@ -29,7 +29,7 @@ function setup() {
     toolbox.addTool(new StampTool());
     toolbox.addTool(new mirrorDrawTool());
     toolbox.addTool(new EraserTool());
-    toolbox.addTool(new kaleidoscopeTool());
+    toolbox.addTool(new KaleidoscopeTool());
     background(255);
 
 }
