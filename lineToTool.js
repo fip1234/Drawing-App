@@ -12,6 +12,7 @@ function LineToTool(){
 	//draws the line to the screen 
 	this.draw = function(){
 
+		strokeWeight(1);
 		//only draw when mouse is clicked
 		if(mouseIsPressed){
 			//if it's the start of drawing a new line
