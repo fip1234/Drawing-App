@@ -2,13 +2,14 @@ var colourSatSlider;
 var nReflection;
 var lineThicknessSlider;
 
+//starts
 function kaleidoscopeTool() {
     this.name = "kaleidoscopeTool";
     this.icon = "assets/kaleidoscope.jpg";
-
+//end
 
         colorMode(HSB, 360, 150, 100, 1);
-
+//start
     this.populateOptions = function() {
         select(".options").html(
             "<div>Colour Saturation</div>" +
@@ -38,14 +39,17 @@ function kaleidoscopeTool() {
 
     this.draw = function() {
         if (mouseIsPressed) {
+//end
             translate(width / 2, height / 2);
             var sat = colourSatSlider.value();
             var angle = nReflection.value();
-            var lineThickness = lineThicknessSlider.value(); // Get the value of the new slider
+//start
+            var lineThickness = lineThicknessSlider.value(); 
 
             for (let i = 0; i < angle; i++) {
                 rotate(TWO_PI / angle); 
-                strokeWeight(lineThickness); // Use the value to set the stroke weight
+                strokeWeight(lineThickness);
+//end
                 stroke(mouseX, sat, sat, 0.5);
                 line(mouseX - width / 2, mouseY - height / 2, pmouseX - width / 2, pmouseY - height / 2);
                 push();

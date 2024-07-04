@@ -1,6 +1,7 @@
 //a tool for drawing straight lines to the screen. Allows the user to preview
 //the a line to the current mouse position before drawing the line to the 
 //pixel array.
+
 function LineToTool(){
 	this.icon = "assets/lineTo.jpg";
 	this.name = "LineTo";
@@ -28,10 +29,19 @@ function LineToTool(){
 				//update the screen with the saved pixels to hide any previous
 				//line between mouse pressed and released
 				updatePixels();
-				//draw the line
+				// draw the line
 				line(startMouseX, startMouseY, mouseX, mouseY);
-			}
+			};
 
+				// START//
+				// code to make a curved line, still need to implement it 
+				// noFill()
+				// curve(startMouseX + 300, startMouseY + 300,
+				// 	startMouseX, startMouseY,
+				// 	mouseX, mouseY,
+				// 	mouseX + 100, mouseY + 100);
+				// }
+				//END//
 		}
 
 		else if(drawing){
