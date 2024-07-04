@@ -1,8 +1,10 @@
+//////////ERASER TOOL///////////
+
 function EraserTool() {
     this.icon = "assets/eraser.jpg";
     this.name = "eraser";
 
-
+	//Call variables for previous mouseX
     var previousmouseX = -1;
     var previousmouseY = -1;
 
