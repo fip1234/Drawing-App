@@ -17,6 +17,7 @@ function ColourPicker() {
         stroke(c);
     };
 
+//START
     // Load the color palette
     this.loadColours = function() {
         // Set the fill and stroke properties to be black at the start of the programme running
@@ -36,3 +37,4 @@ function ColourPicker() {
     this.loadColours();
 }
 
+//END

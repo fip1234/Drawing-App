@@ -17,7 +17,9 @@ function setup() {
     c.parent("content");
     //create helper functions and the colour palette
     helpers = new HelperFunctions();
+//START
     colourP = new ColourPicker();
+//END
 
     //create a toolbox for storing the tools
     toolbox = new Toolbox();
@@ -26,11 +28,13 @@ function setup() {
     toolbox.addTool(new FreehandTool());
     toolbox.addTool(new LineToTool());
     toolbox.addTool(new SprayCanTool());
+//START
     toolbox.addTool(new StampTool());
     toolbox.addTool(new mirrorDrawTool());
     toolbox.addTool(new EraserTool());
     toolbox.addTool(new KaleidoscopeTool());
     background(255);
+//ENDS
 
 }
 

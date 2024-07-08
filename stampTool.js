@@ -7,6 +7,7 @@ var starSizeSlider;
 var nStarSlider;
 
 //Call the function for the stamptool. This function will be called in setup of sketch.js of the toolbox
+//START
 function StampTool() {
     //path to the stamp tool image
     this.name = "stampTool";
@@ -36,7 +37,8 @@ function StampTool() {
     };
 
 
-    //calls the draw function
+//END
+//calls the draw function
     this.draw = function() {
         //if mouse is pressed, it allows for the star image to be placed in the area where the mouse is (according to x and y coordinates)
         if (mouseIsPressed && star) {

@@ -1,5 +1,6 @@
 //////////ERASER TOOL///////////
 
+//START
 function EraserTool() {
     this.icon = "assets/eraser.jpg";
     this.name = "eraser";
@@ -19,6 +20,7 @@ function EraserTool() {
 				previousmouseX = mouseX;
 				previousmouseY = mouseY;
 			}
+//END
 			//if we already have values for previousX and Y we can draw a line from 
 			//there to the current mouse location
 			else{
@@ -37,3 +39,4 @@ function EraserTool() {
 	};
 
 }
+
