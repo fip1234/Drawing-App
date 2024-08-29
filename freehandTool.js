@@ -22,6 +22,7 @@ function FreehandTool(){
 			//if we already have values for previousX and Y we can draw a line from 
 			//there to the current mouse location
 			else{
+				strokeWeight(1)
 				line(previousMouseX, previousMouseY, mouseX, mouseY);
 				previousMouseX = mouseX;
 				previousMouseY = mouseY;
