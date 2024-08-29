@@ -3,11 +3,14 @@
 var toolbox = null;
 var colourP = null;
 var helpers = null;
-
+var star, bow, cherry, currentStamp;
 
 function preload() {
     star = loadImage('./assets/star.png');
-    }
+    bow = loadImage('./assets/bow.png');
+    cherry = loadImage('./assets/cherry.png');
+    currentStamp = star; // Default stamp
+}
     
 function setup() {
 
