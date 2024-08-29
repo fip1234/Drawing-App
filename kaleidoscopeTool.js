@@ -34,7 +34,7 @@ function KaleidoscopeTool() {
         nReflection = createSlider(6, 32, 6);
         nReflection.parent(select("#angleControl"));
 
-        //in order to control the colour thickness
+        //in order to control the line thickness
         lineThicknessSlider = createSlider(1, 20, 15); 
         lineThicknessSlider.parent(select("#thicknessControl"));
     };
