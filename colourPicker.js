@@ -13,7 +13,7 @@ function ColourPicker() {
         
         // Set the selected colour and fill and stroke
         self.selectedColour = c;
-        fill(c);
+        noFill();
         stroke(c);
     };
 
