@@ -14,14 +14,17 @@ function preload() {
     
 function setup() {
 
-    //create a canvas to fill the content div from index.html
+    //for the shapEditTool
     var canvasContainer = select('#content');
     var c = createCanvas(canvasContainer.size().width, canvasContainer.size().height);
     c.parent("content");
+
     //create helper functions and the colour palette
     helpers = new HelperFunctions();
 //START
     colourP = new ColourPicker();
+    var shapeEditTool = new ShapeEditTool();
+    shapeEditTool.setup(c); // Pass the canvas reference
 //END
 
     //create a toolbox for storing the tools
@@ -36,6 +39,7 @@ function setup() {
     toolbox.addTool(new mirrorDrawTool());
     toolbox.addTool(new EraserTool());
     toolbox.addTool(new KaleidoscopeTool());
+    toolbox.addTool(shapeEditTool);
     background(255);
 //ENDS
 
