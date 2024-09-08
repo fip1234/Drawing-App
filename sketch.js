@@ -40,6 +40,7 @@ function setup() {
     toolbox.addTool(new EraserTool());
     toolbox.addTool(new KaleidoscopeTool());
     toolbox.addTool(shapeEditTool);
+    toolbox.addTool(new TextTool());
     background(255);
 //ENDS
 
