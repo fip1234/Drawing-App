@@ -59,7 +59,7 @@ function StampTool() {
 //END
 //calls the draw function
     this.draw = function() {
-                //if mouse is pressed, it allows for the star image to be placed in the area where the mouse is (according to x and y coordinates)
+        //if mouse is pressed, it allows for the star image to be placed in the area where the mouse is (according to x and y coordinates)
         if (mouseIsPressed && currentStamp) {
             for (var i = 0; i < nStarSlider.value(); i++) {
                 var stampSize = starSizeSlider.value();

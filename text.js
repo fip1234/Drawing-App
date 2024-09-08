@@ -19,7 +19,7 @@ function TextTool() {
         );
         
         // Create the text size slider
-        textSizeSlider = createSlider(10, 100, 32); // Adjust min, max, default values as needed
+        textSizeSlider = createSlider(10, 100, 32); 
         textSizeSlider.parent(select("#textSizeControl"));
 
         // Create the text input field
@@ -39,10 +39,9 @@ function TextTool() {
         // Get the text from the input field
         var textValue = textInput.value();
         
-        // Set text size and color
         textSize(textSizeValue);
 
-        // Draw the text at the current mouse position if the mouse is pressed
+        // Draw the text at the current mouse position when the mouse is pressed over that particular area
         if (mouseIsPressed) {
             text(textValue, mouseX, mouseY);
         }

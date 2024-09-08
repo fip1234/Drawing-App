@@ -1,3 +1,5 @@
+//START//
+
 function ShapeEditTool() {
     this.icon = "assets/edit.jpg";
     this.name = "ShapeEdit";
@@ -17,7 +19,7 @@ function ShapeEditTool() {
     // Populate the options area with buttons and a dropdown for line type
     this.populateOptions = function() {
         select(".options").html(""); // Clear existing options
-
+//END//
         // Create and set up the Edit/Add Vertices button 
         var self = this; 
         var editButton = createButton('Edit Shape');
@@ -33,11 +35,11 @@ function ShapeEditTool() {
         finishButton.mousePressed(function() {
             editMode = false;
             editButton.html("Edit Shape"); // Reset edit button text
-            self.draw(); // Finalize the shape
+            self.draw();
             loadPixels();
             currentShape = [];
         });
-
+//START
         // Create a dropdown to select between Straight and Dashed Lines
         lineTypeSelect = createSelect();
         lineTypeSelect.option('Straight Line');
@@ -95,9 +97,10 @@ function ShapeEditTool() {
             }
         }
     };
-
+//END
     // Change offset values from UoL example to mouseX and mouseY
     function mousePressOnCanvas() {
         return mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height;
     }
 }
+

@@ -39,7 +39,6 @@ function SprayCanTool() {
 
         // Only spray when the mouse is pressed
         if (mouseIsPressed) {
-            // Loop through the number of spray points
             for (var i = 0; i < points; i++) {
                 // Set the stroke weight to the value from the pointThickness slider
                 strokeWeight(pointThickness);

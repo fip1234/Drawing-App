@@ -38,7 +38,7 @@ function EraserTool() {
 
         // If the mouse is pressed, draw the erasing line
         if (mouseIsPressed) {
-            // If previous mouse positions are not set, initialize them
+            // If previous mouse positions are not set, initialiSe them
             if (previousmouseX == -1) {
                 previousmouseX = mouseX;
                 previousmouseY = mouseY;
