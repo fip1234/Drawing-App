@@ -38,8 +38,8 @@ function setup() {
     toolbox.addTool(new StampTool());
     toolbox.addTool(new mirrorDrawTool());
     toolbox.addTool(new EraserTool());
-    toolbox.addTool(new KaleidoscopeTool());
     toolbox.addTool(new TextTool());
+    toolbox.addTool(new KaleidoscopeTool());
     toolbox.addTool(shapeEditTool);
     background(255);
 //ENDS
