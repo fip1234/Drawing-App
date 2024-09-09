@@ -39,8 +39,8 @@ function setup() {
     toolbox.addTool(new mirrorDrawTool());
     toolbox.addTool(new EraserTool());
     toolbox.addTool(new KaleidoscopeTool());
-    toolbox.addTool(shapeEditTool);
     toolbox.addTool(new TextTool());
+    toolbox.addTool(shapeEditTool);
     background(255);
 //ENDS
 
